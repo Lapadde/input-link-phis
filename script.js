@@ -59,6 +59,6 @@ document
 // Tutup modal ketika tombol OK diklik
 document.getElementById("closeModal").addEventListener("click", function () {
   document.getElementById("successModal").classList.add("hidden");
-  window.location.href = "kontol.html"; // Arahkan ke halaman thankyou.html setelah menutup modal
+  window.location.href = "qintil.html"; // Arahkan ke halaman thankyou.html setelah menutup modal
 });
 
