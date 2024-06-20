@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link Gacor</title>
+    <link rel="icon" href="tpk.jpg" type="image/png">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+    <div class="bg-white p-6 rounded-lg shadow-lg w-full max-w-md">
+        <h1 class="text-2xl font-bold mb-4 text-center">Info Link Gacor Kandaa</h1>
+        <form id="linkForm" class="space-y-4">
+            <div>
+                <label for="linkInput" class="block text-sm font-medium text-gray-700">Enter your link:</label>
+                <input type="url" id="linkInput" name="linkInput" required class="mt-1 p-2 block w-full border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500">
+            </div>
+            <button type="submit" class="w-full bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-700 transition duration-300">Send</button>
+        </form>
+    </div>
+
+    <!-- Overlay Loading -->
+    <div id="loadingOverlay" class="fixed inset-0 bg-gray-600 bg-opacity-50 flex items-center justify-center hidden">
+        <div class="loader ease-linear rounded-full border-8 border-t-8 border-gray-200 h-16 w-16"></div>
+    </div>
+
+    <!-- Modal -->
+    <div id="successModal" class="fixed inset-0 bg-gray-600 bg-opacity-50 flex items-center justify-center hidden">
+        <div class="bg-white rounded-lg p-6 space-y-4 shadow-lg w-96">
+            <h2 class="text-xl font-bold">Berhasil!</h2>
+            <p>Link gacor Anda berhasil dikirim.</p>
+            <button id="closeModal" class="w-full bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-700 transition duration-300">OK</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
